@@ -1,22 +1,18 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed May 27 12:04:27 2020
-@author: Paulo
+@author: Team Phi - 6
 Project Area Denial
 """
-import matplotlib.pyplot as plt
-import pandas as pd
-import numpy as np
 
-
-from flask import Flask, redirect, url_for, render_template, request, Response
-
-
+# Flask
+from flask import Flask, redirect, url_for, render_template
 app = Flask(__name__)
 
 @app.route("/home")
 @app.route("/")
 def home():
+    """Home Page"""
     return render_template("index.html")
 
 @app.route("/members")
@@ -29,11 +25,17 @@ def about():
     """About Page"""
     return render_template("about.html")
 
+@app.route("/reference")
+def reference():
+    """Reference Page"""
+    return render_template("reference.html")
+
 
 @app.route("/data")
 def data():
-    df = pd.read_csv('Stat/covid.csv')
-    return render_template('data.html',  tables=[df.to_html(classes='data')])
+    """Answer Page"""
+    return render_template('data.html')
+
 
 
 
@@ -48,6 +50,6 @@ def user(name):
     return redirect(url_for("no_page"))
 
 
-
+#Flask
 if __name__ == "__main__":
         app.run(debug=True)
