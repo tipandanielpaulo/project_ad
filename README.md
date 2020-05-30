@@ -1,4 +1,4 @@
-# NASA Space Apps Challenge (Team Φ-6)
+# NASA Space Apps Challenge (Team Phi-6)
 
 
 project_ad.py    - Flask /Python main program
