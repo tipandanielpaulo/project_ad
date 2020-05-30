@@ -1,5 +1,56 @@
 {% extends "base.html" %}
-{% block title %} Members Page {% endblock %}
+{% block title %} About Page {% endblock %}
 {% block content %}
-<h1> This website is about the Project Area Denial</h1>
+
+
+<div class="card mb-3" style="max-width: 800px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="static/map.png" class="card-img-top" alt="Map" >
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Summary</h5>
+		<p class="card-text"> Currently, we are unable to determine the next location of the spread of the COVID-19 virus. However, we can predict the probability of where it would spread next. Our project aims to develop a COVID-19 hotspot prediction system using environmental variables such as air quality, meteorological variables, and human population. Based on our research, the air quality and the weather had a positive correlation with spread of the virus. 
+							Users will be able to see which city is safe during pandemic. </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="card mb-3" style="max-width: 800px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="static/virus.png" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">How it works? </h5>
+        <p class="card-text"> Random Forest Regression is used to predict where would a COVID-19 hotspot would be. </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="card mb-3" style="max-width: 800px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="static/python.jfif" class="card-img" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Tools used: </h5>
+        <p class="card-text">Python for Web Design and Analysis </p>
+		<p class="card-text">Flask, Sklearn, Numpy, Matplotlib </p>
+		<p class="card-text">Azure for Cloud Services</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 {% endblock %}
