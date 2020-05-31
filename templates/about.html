@@ -3,10 +3,10 @@
 {% block content %}
 
 
-<div class="card mb-3" style="max-width: 800px;">
+<div class="card mb-3" >
   <div class="row no-gutters">
     <div class="col-md-4">
-      <img src="static/map.png" class="card-img-top" alt="Map" >
+      <img src="static/map.png" class="card-img-top" alt="Map" width="50" height="250" >
     </div>
     <div class="col-md-8">
       <div class="card-body">
@@ -19,15 +19,16 @@
 </div>
 
 
-<div class="card mb-3" style="max-width: 800px;">
+<div class="card mb-3" >
   <div class="row no-gutters">
     <div class="col-md-4">
-      <img src="static/virus.png" class="card-img" alt="...">
+      <img src="static/virus.png" class="card-img" alt="virus" width="50" height="250">
     </div>
     <div class="col-md-8">
       <div class="card-body">
         <h5 class="card-title">How it works? </h5>
-        <p class="card-text"> Random Forest Regression is used to predict where would a COVID-19 hotspot would be. </p>
+        <p class="card-text"> The user will input the environmental variables and our prediction model will output a value of how many cases will the virus produce. The higher the number of cases, the more cautious the user should be in the chosen city.</p>
+		<p class="card-text"> Random Forest Regressor is used to predict the number of COVID-19 cases. </p>
       </div>
     </div>
   </div>
@@ -35,17 +36,17 @@
 
 
 
-<div class="card mb-3" style="max-width: 800px;">
+<div class="card mb-3">
   <div class="row no-gutters">
     <div class="col-md-4">
-      <img src="static/python.jfif" class="card-img" alt="...">
+      <img src="static/python.jfif" class="card-img" alt="Python" width="50" height="250">
     </div>
     <div class="col-md-8">
       <div class="card-body">
         <h5 class="card-title">Tools used: </h5>
         <p class="card-text">Python for Web Design and Analysis </p>
 		<p class="card-text">Flask, Sklearn, Numpy, Matplotlib </p>
-		<p class="card-text">Azure for Cloud Services</p>
+		<p class="card-text">Docker and Azure for production </p>
       </div>
     </div>
   </div>

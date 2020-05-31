@@ -4,14 +4,11 @@
 
 <form method="POST" action="/predict">
 
-
-
-
 <div class="jumbotron jumbotron-fluid">
 	<div class="container">
 		<div class = 'form-group'>
 		
-        <label for='City'><h1 class="display-4">Is it safe at the city of... </h1></label> <br>
+        <label for='City'><h1 class="display-4">Is it safe in the city of... </h1></label> <br>
 		
         <!input type="text" name='brand'>
         <select name="city" id="covid">
@@ -40,8 +37,13 @@
 	</div>	
 </div>
 
+<div class="card" >
+  <div class="card-body">
+    <h2 class="card-title">Enter the environmental values...</h2>
+    <a href="https://aqicn.org/city/philippines/" class="card-link">See values here for reference</a>
+  </div>
+</div>
 
-<h2> Enter environmental factors. </h2>
 
 <br> 
 
@@ -49,7 +51,7 @@
   <div class ="card border-danger mb-3" style="max-width: 18rem;">
     <div class="card-body text-danger">
 	
-	<h5 class="card-title">Temperature in C</h5>
+	<h5 class="card-title">Temperature in °C</h5>
 	<div class = 'form-group'>
                     <label for='Covtemp'></label>
                     <input type="text" name='temperature'>
@@ -90,15 +92,20 @@
                     <label for='Covno2'></label>
                     <input type="text" name='no2'>
                 </div>
-      <p class="card-text"><small class="text-muted">Example value: 4.2</small></p>
+      <p class="card-text"><small class="text-muted">Example value: 2.2</small></p>
     </div>
   </div>
-</div>
+ </div>
 
 
 	<br> 
+	<div class="center-screen">
+	
+
      <input class="btn btn-primary" type="submit" value="Submit">
-                
+  
+	
+	</div>		 
 
 </form>
       
