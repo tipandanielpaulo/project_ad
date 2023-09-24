@@ -7,3 +7,4 @@ templates folder - HTML pages
 
 static folder    - Pictures
 
+Machine Learning Web App to predict COVID19 Cases in Metro Manila
